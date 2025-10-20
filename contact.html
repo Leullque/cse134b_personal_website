@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style media="screen">
-    body { background: white; }
+    nav { border: 1px solid black; }
   </style>
   <link href="images/favicon.ico" rel="icon" />
-  <title>Rosie Wang's personal website</title>
-
+  <title>Rosie Wang's personal website | Contact</title>
+  <script src="https://example.org/remote.js"></script>
+  <noscript>
+    <p>JavaScript is disabled in your browser.</p>
+  </noscript>
 </head>
 <body>
   <header>
@@ -21,8 +24,35 @@
   </header>
   <main>
     <h1>Contact</h1>
+    <p>Let's connect! Whether you'd like to discuss a work opportunities, share ideas, or just say hi — I'd love to hear from you. Feel free to fill in the form!</p>
+    <form action="mailto:xiw183@ucsd.edu" method="POST">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:
+                <input type="text" id="name" name="name" required/>
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" required/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Content</legend>
+            <label for="message">Message:
+                <textarea id="message" name="message" required></textarea>
+            </label>
+        </fieldset>
+        <button type="submit">Send</button>
+        <p>Sending:
+            <progress id="submitprogress" max="100" value="0">0</progress>
+        </p>
+    </form>
     <p>You can also view or download my full CV directly.</p>
     <iframe src="files/CV.pdf" width="100%" title="Rosie Wang's CV"></iframe>
+    <div>
+        <dialog open>
+            <p>If you encounter any issues, please contact me directly via email: <a href="mailto:xiw183@ucsd.edu">xiw183@ucsd.edu</a>.</p>
+        </dialog>
+    </div>
   </main>
 
   <footer>

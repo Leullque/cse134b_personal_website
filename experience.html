@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style media="screen">
-    body { background: white; }
+    nav { border: 1px solid black; }
+    course-card {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 1px 2px;
+      margin: 1px;
+      border-radius: 5px;
+      background-color: rgb(253, 239, 213);
+    }
   </style>
   <link href="images/favicon.ico" rel="icon" />
   <title>Rosie Wang's personal website | Experience</title>
-
+  <script src="https://example.org/remote.js"></script>
+  <noscript>
+    <p>JavaScript is disabled in your browser.</p>
+  </noscript>
 </head>
 <body>
   <header>
@@ -26,28 +37,34 @@
         <h3>University of California, San Diego</h3>
         <p><i>MSc. in Electrical and Computer Engineering</i></p>
         <p>September 2024 - Present</p>
+        <p>Courses: <course-card>Recommender Sys&Web Mining</course-card> <course-card>Computer Graphics</course-card> <course-card>Web Client Languages</course-card></p>
 
         <h3>Shanghai Jiao Tong University</h3>
         <p><i>B.Eng in Electrical and Computer Engineering</i></p>
         <p>September 2020 - June 2024</p>
+        <p>Courses: <course-card>Advanced Data Structures and Algorithms</course-card> <course-card>Operating Systems</course-card> <course-card>Networks</course-card></p>
     </section>
     <section id="workExperience">
       <h2>Work</h2>
-        <h3>HeartByte</h3>
-        <p><em>AI writing</em> web platform</p>
-        <p>Apr 2025 - June 2025</p>
-        <ul>
-          <li>Implemented Terms of Use signing flow for both email and Google authentication, including a pop-up notification for existing users.</li>
-          <li>Built front-end interfaces using <strong>Tailwind CSS</strong> and <strong>HeroUI</strong>: developed a customized reader with adjustable font, margin, background, and theme settings to enhance readability and user personalization across mobile and desktop.</li>
-          <li>Integrated a <strong>RESTful API</strong> based query system with <strong>Firebase (NoSQL)</strong> for user management on the admin dashboard.</li>
-        </ul>
-        <h3>Enflame Technology</h3>
-        <p><em>Deep Learning chips</em> development company - Performace Lab</p>
-        <p>Jan 2024 - Apr 2024</p>
-        <ul>
-          <li>Developed a <strong>Python</strong> local tool for automatic performance analysis and comparison of gpu, integrating 9 distinct modules to handle task pipeline. Saved 75% manual work with great accuracy and much faster speed.</li>
-          <li>Integrated with <strong>NVIDIA Nsight</strong> platform and accepting 50K+ entries of <strong>SQLite</strong> files and Excel reports to analyze metrics for <strong>CUDA</strong> operator-specific performance, execution cycles, timing, latency gaps and bandwidth.</li>
-        </ul>
+        <article>
+            <h3>HeartByte</h3>
+            <p><em>AI writing</em> web platform</p>
+            <p>Apr 2025 - June 2025</p>
+            <ul>
+            <li>Implemented Terms of Use signing flow for both email and Google authentication, including a pop-up notification for existing users.</li>
+            <li>Built front-end interfaces using <strong>Tailwind CSS</strong> and <strong>HeroUI</strong>: developed a customized reader with adjustable font, margin, background, and theme settings to enhance readability and user personalization across mobile and desktop.</li>
+            <li>Integrated a <strong>RESTful API</strong> based query system with <strong>Firebase (NoSQL)</strong> for user management on the admin dashboard.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Enflame Technology</h3>
+            <p><em>Deep Learning chips</em> development company - Performace Lab</p>
+            <p>Jan 2024 - Apr 2024</p>
+            <ul>
+            <li>Developed a <strong>Python</strong> local tool for automatic performance analysis and comparison of gpu, integrating 9 distinct modules to handle task pipeline. Saved 75% manual work with great accuracy and much faster speed.</li>
+            <li>Integrated with <strong>NVIDIA Nsight</strong> platform and accepting 50K+ entries of <strong>SQLite</strong> files and Excel reports to analyze metrics for <strong>CUDA</strong> operator-specific performance, execution cycles, timing, latency gaps and bandwidth.</li>
+            </ul>
+        </article>
     </section>
     <section id="teachingExperience">
       <h2>Teaching Experience</h2>

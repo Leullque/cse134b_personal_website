@@ -4,12 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style media="screen">
-    body { background: white; }
+    nav { border: 1px solid black; }
   </style>
   <link href="images/favicon.ico" rel="icon" />
   <title>Rosie Wang's personal website</title>
-
+  <script src="https://example.org/remote.js"></script>
+  <script>
+    class HelloWorld extends HTMLElement {
+      constructor() {
+        super();
+        console.log("Hello World!");
+      }
+    }
+    customElements.define("hello-world", HelloWorld);
+  </script>
+  <noscript>
+    <p>JavaScript is disabled in your browser.</p>
+  </noscript>
 </head>
+
 <body>
   <header>
     <nav>
@@ -26,10 +39,18 @@
       <p>B.Eng in Electrical and Computer Engineering at SJTU</p>
     </div>
     <h2>Welcome!</h2>
+    <hello-world></hello-world>
     <img src="images/main.jpeg" alt="main photo" width="30%">
     <p>I'm Rosie Wang, a <strong>Software Engineer</strong> and <strong>Data Scientist</strong>.</p>
     <p>I specialize in full-stack software development and data analysis.</p>
-    <h3>Top 3 Skills I'm Focusing On</h3>
+    <h3>
+      Top 3 Skills I'm Focusing On
+      <svg width="20" height="20">
+        <circle cx="10" cy="14" r="6" fill="green" 
+          fill="none" >
+        </circle>
+      </svg>
+    </h3>
     <ol>
       <li>High-performance, concurrent backend applications with <strong>Go</strong></li>
       <li>Machine Learning & LLM with <strong>Python</strong></li>
