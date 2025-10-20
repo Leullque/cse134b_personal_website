@@ -16,28 +16,6 @@
   </style>
   <link href="images/favicon.ico" rel="icon" />
   <title>Rosie Wang's personal website | Experiments</title>
-  <script src="https://example.org/remote.js"></script>
-  <script>
-    class HelloWorld extends HTMLElement {
-      constructor() {
-        super();
-        console.log("Hello World!");
-      }
-    }
-    customElements.define("hello-world", HelloWorld);
-  </script>
-  <script>
-    window.addEventListener('load', function(){
-    let canvas = document.getElementById("canvas");
-    let context = canvas.getContext("2d");
-    context.fillStyle = "lightblue";
-    context.fillRect(0, 0, canvas.width, canvas.height);
-    context.fillText("Hello World", 10, 50);
-    });
-  </script>
-  <noscript>
-    <p>JavaScript is disabled in your browser.</p>
-  </noscript>
 </head>
 
 <body>
@@ -75,6 +53,15 @@
     <canvas id="canvas" width="300" height="300">
         Canvas is not supported by your browser.
     </canvas>
+    <script>
+        window.addEventListener('load', function(){
+        let canvas = document.getElementById("canvas");
+        let context = canvas.getContext("2d");
+        context.fillStyle = "lightblue";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
+    <noscript>JavaScript is disabled in your browser.</noscript>
     <h2>source</h2>
     <p>source is included in the above sections.</p>
     <h2>math formula</h2>
